@@ -70,7 +70,9 @@ function Form() {
             name="name"
             value={form.name}
             placeholder="Enter Name"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            data-cy="name"
+            />
             </label>
         </section>
         <section className='Email'>
@@ -81,7 +83,9 @@ function Form() {
             name="email"
             value={form.email}
             placeholder="Enter Email"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            data-cy="email"
+            />
             </label>
         </section>
         <section className='Password'>
@@ -92,7 +96,9 @@ function Form() {
             name="password"
             value={form.password}
             placeholder="Enter Password"
-            onChange={handleChange} />
+            onChange={handleChange} 
+            data-cy="password"
+            />
             </label>
         </section>
         <section>
@@ -102,12 +108,14 @@ function Form() {
                 type="checkbox"
                 name="agree"
                 checked={form.agree}
-                onChange={handleChange} />
+                onChange={handleChange} 
+                data-cy="agree"
+                />
             </label>    
         </section>  
     
         <div className='submit'>
-        <button disabled={disabled}>Submit!</button>
+        <button disabled={disabled} data-cy="submitBtn">Submit!</button>
         </div>
       </form>
     </div>  
